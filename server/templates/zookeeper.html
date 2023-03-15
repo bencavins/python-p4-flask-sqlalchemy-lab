@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <ul>
+      <ul>ID: {{ zookeeper.id }}</ul>
+      <ul>Name: {{ zookeeper.name }}</ul>
+      <ul>Birthday: {{ zookeeper.birthday }}</ul>
+      {% for animal in zookeeper.animals %}
+        <ul>Animal: {{ animal.name }}</ul>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
